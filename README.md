@@ -1,7 +1,7 @@
 # ClipForge
 
 **ClipForge** is a lightweight, open-source macOS gameplay clipping app.
-Save the last N seconds of your gameplay with a single hotkey — no account, no cloud, no bloat.
+Save the last N seconds of your gameplay with a single hotkey - no account, no cloud, no bloat.
 
 ![ClipForge Screenshot](docs/screenshot.png)
 
@@ -16,27 +16,27 @@ Most gameplay clippers are heavy Electron apps bolted onto cloud platforms. They
 | Account required | No | Yes |
 | Cloud upload | Never (opt-in roadmap) | Always |
 | Background CPU | ~0 when idle | Constant |
-| Electron / web tech | No — native Swift + SwiftUI | Often yes |
+| Electron / web tech | No - native Swift + SwiftUI | Often yes |
 | Open source | MIT | No |
 | Apple Silicon optimised | Yes | Partial |
 | Local-first | Yes | Cloud-first |
 
-ClipForge is the **`mpv` of clip tools** — fast, native, local, and completely out of your way.
+ClipForge is the **`mpv` of clip tools** - fast, native, local, and completely out of your way.
 
 ---
 
 ## Features
 
-- **Instant Replay** — rolling ring buffer captures the last 15s / 30s / 60s / 90s / 2m of gameplay
-- **Hotkey save** — press `⌘⇧C` (configurable) to save the last N seconds as an MP4
-- **Manual record** — start and stop a full recording session with a hotkey
-- **Display or window capture** — capture a whole display or just one game window
-- **System audio** — captures system sound via ScreenCaptureKit
-- **Optional mic** — overlay your voice on the clip
-- **Clip library** — local grid view with thumbnails, rename, favorite, delete
-- **Lightweight trim** — drag in/out points and export a trimmed version
-- **Menu bar app** — quick access without opening the main window
-- **No telemetry** — zero analytics, zero network requests
+- **Instant Replay** - rolling ring buffer captures the last 15s / 30s / 60s / 90s / 2m of gameplay
+- **Hotkey save** - press `⌘⇧C` (configurable) to save the last N seconds as an MP4
+- **Manual record** - start and stop a full recording session with a hotkey
+- **Display or window capture** - capture a whole display or just one game window
+- **System audio** - captures system sound via ScreenCaptureKit
+- **Optional mic** - overlay your voice on the clip
+- **Clip library** - local grid view with thumbnails, rename, favorite, delete
+- **Lightweight trim** - drag in/out points and export a trimmed version
+- **Menu bar app** - quick access without opening the main window
+- **No telemetry** - zero analytics, zero network requests
 
 ---
 
@@ -94,36 +94,36 @@ ClipForge is **not sandboxed** so it can write clips to any user-chosen folder. 
 ```
 ClipForge/
 ├── App/
-│   ├── ClipForgeApp.swift      — @main, WindowGroup + MenuBarExtra + Settings scenes
-│   └── AppDelegate.swift       — lifecycle, single-instance guard
+│   ├── ClipForgeApp.swift      - @main, WindowGroup + MenuBarExtra + Settings scenes
+│   └── AppDelegate.swift       - lifecycle, single-instance guard
 │
 ├── Models/
-│   ├── Clip.swift              — Value type representing a saved clip
-│   ├── RecordingSettings.swift — Enums for FPS, resolution, codec, bitrate, replay duration
-│   └── CaptureSource.swift     — Display or window capture target
+│   ├── Clip.swift              - Value type representing a saved clip
+│   ├── RecordingSettings.swift - Enums for FPS, resolution, codec, bitrate, replay duration
+│   └── CaptureSource.swift     - Display or window capture target
 │
-├── Managers/                   — Single-responsibility services (no UI dependencies)
-│   ├── SettingsStore.swift     — UserDefaults-backed @Published settings
-│   ├── PermissionsManager.swift— Check + request screen recording & microphone
-│   ├── ReplayBuffer.swift      — actor: thread-safe CMSampleBuffer ring buffer
-│   ├── VideoEncoder.swift      — VTCompressionSession wrapper (CVPixelBuffer → H.264/HEVC)
-│   ├── CaptureManager.swift    — SCStream setup, delegate, feeds VideoEncoder → ReplayBuffer
-│   ├── AudioManager.swift      — AVCaptureSession microphone capture
-│   ├── ClipExportManager.swift — AVAssetWriter assembles buffer → .mp4; generates thumbnails
-│   ├── LibraryManager.swift    — Clip metadata, search, CRUD, JSON persistence
-│   └── HotkeyManager.swift     — Carbon RegisterEventHotKey (no Accessibility permission needed)
+├── Managers/                   - Single-responsibility services (no UI dependencies)
+│   ├── SettingsStore.swift     - UserDefaults-backed @Published settings
+│   ├── PermissionsManager.swift- Check + request screen recording & microphone
+│   ├── ReplayBuffer.swift      - actor: thread-safe CMSampleBuffer ring buffer
+│   ├── VideoEncoder.swift      - VTCompressionSession wrapper (CVPixelBuffer → H.264/HEVC)
+│   ├── CaptureManager.swift    - SCStream setup, delegate, feeds VideoEncoder → ReplayBuffer
+│   ├── AudioManager.swift      - AVCaptureSession microphone capture
+│   ├── ClipExportManager.swift - AVAssetWriter assembles buffer → .mp4; generates thumbnails
+│   ├── LibraryManager.swift    - Clip metadata, search, CRUD, JSON persistence
+│   └── HotkeyManager.swift     - Carbon RegisterEventHotKey (no Accessibility permission needed)
 │
 ├── ViewModels/
-│   ├── CaptureViewModel.swift  — Orchestrates capture + save; bridges managers → SwiftUI
-│   └── LibraryViewModel.swift  — Search, sort, trim export, selection state
+│   ├── CaptureViewModel.swift  - Orchestrates capture + save; bridges managers → SwiftUI
+│   └── LibraryViewModel.swift  - Search, sort, trim export, selection state
 │
 └── Views/
-    ├── ContentView.swift        — Root NavigationSplitView
-    ├── Library/                 — LibraryView, ClipDetailView, TrimView
-    ├── Settings/                — Tabbed settings window (General, Capture, Hotkeys, Library)
-    ├── Onboarding/              — PermissionsOnboardingView (first run)
-    ├── MenuBar/                 — MenuBarController (MenuBarExtra popover)
-    └── Shared/                  — ThumbnailView, EmptyStateView
+    ├── ContentView.swift        - Root NavigationSplitView
+    ├── Library/                 - LibraryView, ClipDetailView, TrimView
+    ├── Settings/                - Tabbed settings window (General, Capture, Hotkeys, Library)
+    ├── Onboarding/              - PermissionsOnboardingView (first run)
+    ├── MenuBar/                 - MenuBarController (MenuBarExtra popover)
+    └── Shared/                  - ThumbnailView, EmptyStateView
 ```
 
 ### Capture pipeline
@@ -175,7 +175,7 @@ All hotkeys are configurable in **Settings → Hotkeys**.
 Yes. VTCompressionSession and ScreenCaptureKit work on Intel. Performance is best on Apple Silicon due to the hardware H.264/HEVC encoder.
 
 **How do I capture system audio?**
-Enable "Capture system audio" in Settings → General. This uses ScreenCaptureKit's built-in audio tap (macOS 13+) — no virtual audio driver required.
+Enable "Capture system audio" in Settings → General. This uses ScreenCaptureKit's built-in audio tap (macOS 13+) - no virtual audio driver required.
 
 **The clip is missing the first second.**
 The ring buffer trims to the first keyframe (IDR frame) for valid H.264 streams. If the configured FPS is low, keyframes are spaced further apart. Increase FPS or enable B-frame support in a future release (see ROADMAP).
@@ -199,4 +199,4 @@ See [ROADMAP.md](ROADMAP.md) for planned features: GIF export, clip stitching, D
 
 ## License
 
-MIT — see [LICENSE](LICENSE).
+MIT - see [LICENSE](LICENSE).
