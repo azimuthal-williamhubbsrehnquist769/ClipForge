@@ -3,6 +3,8 @@
 **ClipForge** is a lightweight, open-source macOS gameplay clipping app.
 Save the last N seconds of your gameplay with a single hotkey - no account, no cloud, no bloat.
 
+[Download latest release](https://github.com/prsalikut/ClipForge/releases/latest)
+
 ![ClipForge Screenshot](docs/screenshot.png)
 
 ---
@@ -36,6 +38,7 @@ ClipForge is the **`mpv` of clip tools** - fast, native, local, and completely o
 - **Clip library** - local grid view with thumbnails, rename, favorite, delete
 - **Lightweight trim** - drag in/out points and export a trimmed version
 - **Menu bar app** - quick access without opening the main window
+- **Ghost mode** - record invisibly with no menu bar icon, no dock icon, and no window - just hotkeys
 - **No telemetry** - zero analytics, zero network requests
 
 ---
@@ -181,7 +184,7 @@ Enable "Capture system audio" in Settings → General. This uses ScreenCaptureKi
 The ring buffer trims to the first keyframe (IDR frame) for valid H.264 streams. If the configured FPS is low, keyframes are spaced further apart. Increase FPS or enable B-frame support in a future release (see ROADMAP).
 
 **Why is there no NVENC / AMD VCN support?**
-VideoToolbox (`VTCompressionSession`) automatically selects the best available hardware encoder on your Mac, including the Apple Neural Engine's video encoder on M-series chips. No manual selection is needed.
+VideoToolbox (`VTCompressionSession`) automatically selects the best available hardware encoder on your Mac. No manual selection is needed.
 
 ---
 
@@ -193,7 +196,7 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for setup instructions, architecture note
 
 ## Roadmap
 
-See [ROADMAP.md](ROADMAP.md) for planned features: GIF export, clip stitching, Discord integration, AI highlight detection, and more.
+See [ROADMAP.md](ROADMAP.md) for planned features: GIF export, clip stitching, Discord integration, ghost mode, and more.
 
 ---
 

@@ -70,7 +70,7 @@ This document captures planned features and long-term ideas. Items are grouped b
 - [ ] **Segment-file ring buffer** - write 5-second HLS-style segment files to temp disk instead of holding CMSampleBuffers in RAM; reclaim memory for very long durations
 - [ ] **iOS / iPadOS companion** - stream clips to iPhone for quick mobile sharing (via Bonjour + local network)
 - [ ] **Plugin API** - allow third-party Swift packages to add export destinations (YouTube, Streamable, etc.)
-- [ ] **AI highlight detection** - on-device Core ML model to flag high-action moments in the buffer for automatic clip saving
+- [ ] **Ghost mode** - fully invisible recording: no menu bar icon, no Dock icon, no window; activate and save clips entirely via hotkeys
 - [ ] **Accessibility / VoiceOver audit** - full VoiceOver support and keyboard-only navigation
 
 ---
