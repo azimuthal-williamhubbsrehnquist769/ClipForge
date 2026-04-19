@@ -1,0 +1,67 @@
+name: ClipForge
+options:
+  bundleIdPrefix: com.clipforge
+  deploymentTarget:
+    macOS: "14.0"
+  xcodeVersion: "15.0"
+  createIntermediateGroups: true
+  generateEmptyDirectories: false
+
+settings:
+  base:
+    SWIFT_VERSION: "5.9"
+    MACOSX_DEPLOYMENT_TARGET: "14.0"
+    ENABLE_HARDENED_RUNTIME: NO
+    CODE_SIGN_STYLE: Manual
+    DEVELOPMENT_TEAM: MQRKA7LAND
+    CODE_SIGN_IDENTITY: "Apple Development"
+    ALWAYS_SEARCH_USER_PATHS: NO
+    CLANG_ENABLE_MODULES: YES
+    SWIFT_OPTIMIZATION_LEVEL: "-Onone"
+
+targets:
+  ClipForge:
+    type: application
+    platform: macOS
+    sources:
+      - path: ClipForge
+        excludes:
+          - "**/*.md"
+    info:
+      path: ClipForge/Resources/Info.plist
+      properties:
+        CFBundleName: ClipForge
+        CFBundleDisplayName: ClipForge
+        CFBundleIdentifier: com.clipforge.app
+        CFBundleVersion: "1"
+        CFBundleShortVersionString: "1.0.0"
+        LSMinimumSystemVersion: "14.0"
+        NSPrincipalClass: NSApplication
+        NSMainStoryboardFile: ""
+        LSUIElement: false
+        NSMicrophoneUsageDescription: "ClipForge needs microphone access to record your voice during gameplay."
+        NSScreenCaptureUsageDescription: "ClipForge needs screen recording permission to capture your gameplay."
+        NSAppleEventsUsageDescription: "ClipForge uses Apple Events to detect the name of the active application."
+    entitlements:
+      path: ClipForge/Resources/ClipForge.entitlements
+      properties:
+        com.apple.security.app-sandbox: false
+        com.apple.security.device.microphone: true
+        com.apple.security.device.audio-input: true
+    settings:
+      PRODUCT_BUNDLE_IDENTIFIER: com.clipforge.app
+      INFOPLIST_FILE: ClipForge/Resources/Info.plist
+      CODE_SIGN_ENTITLEMENTS: ClipForge/Resources/ClipForge.entitlements
+      ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+      LD_RUNPATH_SEARCH_PATHS: "$(inherited) @executable_path/../Frameworks"
+
+  ClipForgeTests:
+    type: bundle.unit-test
+    platform: macOS
+    sources:
+      - path: ClipForgeTests
+    settings:
+      PRODUCT_BUNDLE_IDENTIFIER: com.clipforge.tests
+      GENERATE_INFOPLIST_FILE: YES
+    dependencies:
+      - target: ClipForge

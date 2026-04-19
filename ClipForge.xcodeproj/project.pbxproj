@@ -1,0 +1,658 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		030D82D8BE74790AD73AD63D /* ClipForgeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B311B686AB52D6C46CD621B /* ClipForgeApp.swift */; };
+		06F908F6CB6F77EF7579B38F /* ThumbnailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41FDA4D49D50911B682DB8BF /* ThumbnailView.swift */; };
+		0C39FD78F77183025E1AA680 /* GeneralSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB3F091ACA4D6D5F2C7125A8 /* GeneralSettingsView.swift */; };
+		15AC8B6D9D6F9B2F683DD350 /* CaptureViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8010A2E14E9017D60B79A37 /* CaptureViewModel.swift */; };
+		18BD54B0F636D13C1BD89AA8 /* Clip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569C838CFFB6B846F3671F6E /* Clip.swift */; };
+		1AAA9967A72B8A21723F842E /* VideoEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2D6D15B33B3756FBCE8786F /* VideoEncoder.swift */; };
+		25146BC6A48BB3A13F8910F4 /* CapturePreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5EDF7DD66CC48D5B950601 /* CapturePreviewView.swift */; };
+		A1B2C3D4E5F60002A1B2C3D4 /* SessionWriter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3D4E5F60001A1B2C3D4 /* SessionWriter.swift */; };
+		284AF551ED150F5EDC097B60 /* ReplayBuffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78BB879926F307E8FC6BEB92 /* ReplayBuffer.swift */; };
+		2FEBE07359D9BDBA1A0889BD /* AudioManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C579F30303FFE884CE5395B /* AudioManager.swift */; };
+		39C6D1D906579AA3E148A138 /* EmptyStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF017851FAB34EFCE6E5818B /* EmptyStateView.swift */; };
+		4331C844311459426359BD68 /* HotkeySettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E194D9503530986F6038FC7 /* HotkeySettingsView.swift */; };
+		453C79E72CE1E90CC65C0611 /* LibraryManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A034F668EFA57C7F6DFFE6E8 /* LibraryManagerTests.swift */; };
+		4E1564F624C6E49AE108ACD4 /* CaptureManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D27A0598BE58EF07A46EF4D2 /* CaptureManager.swift */; };
+		66506F2ABEBBB12A14A26D27 /* CaptureSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A1690D2EFD7C4CD1132073 /* CaptureSettingsView.swift */; };
+		6A52A543B1BAE5FBB52032E3 /* SettingsStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C891EF1E8E9FE266381AFBE /* SettingsStore.swift */; };
+		737AED39F8F6E23E72FE03BE /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D47644C994F3FC2FC75EBEC /* SettingsView.swift */; };
+		795491F7CC8575D15D0466DC /* LibraryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7F9D77120DCC09794F0F18 /* LibraryView.swift */; };
+		8589AC4A4699C14ABD6D28B6 /* LibrarySettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D094C18ACFA677103F86970 /* LibrarySettingsView.swift */; };
+		87823D479DA1F1CEE053E061 /* LibraryManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6EB5DF0BC215746368EB020 /* LibraryManager.swift */; };
+		9792AE1FBCCDE66E0D42485A /* ClipDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC40DDEB5810A71928AA843B /* ClipDetailView.swift */; };
+		9D4601DBFACEEB1759F351CD /* ReplayBufferTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8658D7CF5343A234B83D744 /* ReplayBufferTests.swift */; };
+		9F5EDFDB7886A7F0A9D38AC0 /* HotkeyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6229361C181A4FD33BFF5C9 /* HotkeyManager.swift */; };
+		A2FA16DC1B8AF48BD580F755 /* TrimView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 550A8A26929B02B98B0DC26F /* TrimView.swift */; };
+		AF0B5BC1DAA0A4B481888C7B /* PendingClip.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8C65C3832B43488EA2C5A37 /* PendingClip.swift */; };
+		B37324C5264D0B3D1D0343E8 /* LibraryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C821D4F00B02686A06D992 /* LibraryViewModel.swift */; };
+		B58FFBBCC087F004D5DB6FE8 /* MenuBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2264B83958871D46ED12AF8 /* MenuBarController.swift */; };
+		B9CFAE272652EF9EF4C1BB8A /* ClipSaveBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = F08EFFB518C21977A2FCE9E4 /* ClipSaveBanner.swift */; };
+		C400266A3EA23762051090DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0A9D01505F122B713BDDE9 /* AppDelegate.swift */; };
+		CCFCC909A7A12DC5FEFC54DF /* PermissionsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CAE10D38FC32EC45AC4386A /* PermissionsManager.swift */; };
+		D7B26A7F6355AC7E017F8545 /* SystemAudioCapture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31796EB4862DF1374D814C4D /* SystemAudioCapture.swift */; };
+		DAFBA73B81F214F80F7918F0 /* PermissionsOnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DAA2B9C7E2142D89263689F /* PermissionsOnboardingView.swift */; };
+		E32E3F9DE5CC1A0868FC2290 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BDD2A990ACB418A45CDE69F /* ContentView.swift */; };
+		B1C2D3E4F5A60001B1C2D3E4 /* AppIcon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = AppIcon.icns; sourceTree = "<group>"; };
+		B1C2D3E4F5A60002B1C2D3E4 /* AppIcon.icns in Resources */ = {isa = PBXBuildFile; fileRef = B1C2D3E4F5A60001B1C2D3E4 /* AppIcon.icns */; };
+		EAF80EC52B868D6E021C5CEB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6BE7019B3877F02E340F0647 /* Assets.xcassets */; };
+		EFEB4AFB5ECAAD4170998599 /* ClipExportManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A222D60EB651738B0135F4 /* ClipExportManager.swift */; };
+		F651F5DE1E4B06653FC57617 /* CaptureSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9713E647898B3699A0457F47 /* CaptureSource.swift */; };
+		F88D627DC2CE612B6A146066 /* RecordingSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B3795FD411315CDD3A08FC /* RecordingSettings.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		09D0F9072939228ACC69D707 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1B9B09D348FC639337BA58C0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CE259AF4787285FC75940C3D;
+			remoteInfo = ClipForge;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0BDD2A990ACB418A45CDE69F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		0CAE10D38FC32EC45AC4386A /* PermissionsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermissionsManager.swift; sourceTree = "<group>"; };
+		31796EB4862DF1374D814C4D /* SystemAudioCapture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemAudioCapture.swift; sourceTree = "<group>"; };
+		3B311B686AB52D6C46CD621B /* ClipForgeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClipForgeApp.swift; sourceTree = "<group>"; };
+		3C579F30303FFE884CE5395B /* AudioManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioManager.swift; sourceTree = "<group>"; };
+		3E7F9D77120DCC09794F0F18 /* LibraryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryView.swift; sourceTree = "<group>"; };
+		40A1690D2EFD7C4CD1132073 /* CaptureSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptureSettingsView.swift; sourceTree = "<group>"; };
+		41FDA4D49D50911B682DB8BF /* ThumbnailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThumbnailView.swift; sourceTree = "<group>"; };
+		550A8A26929B02B98B0DC26F /* TrimView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrimView.swift; sourceTree = "<group>"; };
+		569C838CFFB6B846F3671F6E /* Clip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Clip.swift; sourceTree = "<group>"; };
+		6BE7019B3877F02E340F0647 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6D094C18ACFA677103F86970 /* LibrarySettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibrarySettingsView.swift; sourceTree = "<group>"; };
+		6D47644C994F3FC2FC75EBEC /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		75B3795FD411315CDD3A08FC /* RecordingSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingSettings.swift; sourceTree = "<group>"; };
+		A1B2C3D4E5F60001A1B2C3D4 /* SessionWriter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionWriter.swift; sourceTree = "<group>"; };
+		78BB879926F307E8FC6BEB92 /* ReplayBuffer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReplayBuffer.swift; sourceTree = "<group>"; };
+		7C891EF1E8E9FE266381AFBE /* SettingsStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsStore.swift; sourceTree = "<group>"; };
+		7E0A9D01505F122B713BDDE9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8B73F86C76F97A1DD6347EF8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		8DAA2B9C7E2142D89263689F /* PermissionsOnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermissionsOnboardingView.swift; sourceTree = "<group>"; };
+		91B594C35588C5C025B6EAB6 /* ClipForge.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ClipForge.entitlements; sourceTree = "<group>"; };
+		9713E647898B3699A0457F47 /* CaptureSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptureSource.swift; sourceTree = "<group>"; };
+		9B9F461822B326DB91CA73A5 /* ClipForgeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ClipForgeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9E194D9503530986F6038FC7 /* HotkeySettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotkeySettingsView.swift; sourceTree = "<group>"; };
+		A034F668EFA57C7F6DFFE6E8 /* LibraryManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryManagerTests.swift; sourceTree = "<group>"; };
+		A6229361C181A4FD33BFF5C9 /* HotkeyManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotkeyManager.swift; sourceTree = "<group>"; };
+		A6EB5DF0BC215746368EB020 /* LibraryManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryManager.swift; sourceTree = "<group>"; };
+		A8010A2E14E9017D60B79A37 /* CaptureViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptureViewModel.swift; sourceTree = "<group>"; };
+		A8658D7CF5343A234B83D744 /* ReplayBufferTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReplayBufferTests.swift; sourceTree = "<group>"; };
+		B0C821D4F00B02686A06D992 /* LibraryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryViewModel.swift; sourceTree = "<group>"; };
+		B2264B83958871D46ED12AF8 /* MenuBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBarController.swift; sourceTree = "<group>"; };
+		B8C65C3832B43488EA2C5A37 /* PendingClip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PendingClip.swift; sourceTree = "<group>"; };
+		BE5EDF7DD66CC48D5B950601 /* CapturePreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapturePreviewView.swift; sourceTree = "<group>"; };
+		C2D6D15B33B3756FBCE8786F /* VideoEncoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoEncoder.swift; sourceTree = "<group>"; };
+		D1FB513B920E73FA10E06A78 /* ClipForge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClipForge.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D27A0598BE58EF07A46EF4D2 /* CaptureManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptureManager.swift; sourceTree = "<group>"; };
+		DB3F091ACA4D6D5F2C7125A8 /* GeneralSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralSettingsView.swift; sourceTree = "<group>"; };
+		DC40DDEB5810A71928AA843B /* ClipDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClipDetailView.swift; sourceTree = "<group>"; };
+		F08EFFB518C21977A2FCE9E4 /* ClipSaveBanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClipSaveBanner.swift; sourceTree = "<group>"; };
+		F6A222D60EB651738B0135F4 /* ClipExportManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClipExportManager.swift; sourceTree = "<group>"; };
+		FF017851FAB34EFCE6E5818B /* EmptyStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyStateView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		04F1844541F7D33514419A5C /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				BE5EDF7DD66CC48D5B950601 /* CapturePreviewView.swift */,
+				F08EFFB518C21977A2FCE9E4 /* ClipSaveBanner.swift */,
+				FF017851FAB34EFCE6E5818B /* EmptyStateView.swift */,
+				41FDA4D49D50911B682DB8BF /* ThumbnailView.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		0D181CE6474F25EA37AD1F98 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9713E647898B3699A0457F47 /* CaptureSource.swift */,
+				569C838CFFB6B846F3671F6E /* Clip.swift */,
+				B8C65C3832B43488EA2C5A37 /* PendingClip.swift */,
+				75B3795FD411315CDD3A08FC /* RecordingSettings.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		160CA0FEDD81F2B4E14D662D /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				3C579F30303FFE884CE5395B /* AudioManager.swift */,
+				D27A0598BE58EF07A46EF4D2 /* CaptureManager.swift */,
+				F6A222D60EB651738B0135F4 /* ClipExportManager.swift */,
+				A6229361C181A4FD33BFF5C9 /* HotkeyManager.swift */,
+				A6EB5DF0BC215746368EB020 /* LibraryManager.swift */,
+				0CAE10D38FC32EC45AC4386A /* PermissionsManager.swift */,
+				A1B2C3D4E5F60001A1B2C3D4 /* SessionWriter.swift */,
+				78BB879926F307E8FC6BEB92 /* ReplayBuffer.swift */,
+				7C891EF1E8E9FE266381AFBE /* SettingsStore.swift */,
+				31796EB4862DF1374D814C4D /* SystemAudioCapture.swift */,
+				C2D6D15B33B3756FBCE8786F /* VideoEncoder.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		254C504402A60DB8C60B29C8 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				7E0A9D01505F122B713BDDE9 /* AppDelegate.swift */,
+				3B311B686AB52D6C46CD621B /* ClipForgeApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		2D9F9A8E611522BD3729DCBB /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				40A1690D2EFD7C4CD1132073 /* CaptureSettingsView.swift */,
+				DB3F091ACA4D6D5F2C7125A8 /* GeneralSettingsView.swift */,
+				9E194D9503530986F6038FC7 /* HotkeySettingsView.swift */,
+				6D094C18ACFA677103F86970 /* LibrarySettingsView.swift */,
+				6D47644C994F3FC2FC75EBEC /* SettingsView.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		4EAB6CF92955F46469F0E8D8 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				DC40DDEB5810A71928AA843B /* ClipDetailView.swift */,
+				3E7F9D77120DCC09794F0F18 /* LibraryView.swift */,
+				550A8A26929B02B98B0DC26F /* TrimView.swift */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		4EAFCB5B2EC7B41A641FD716 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D1FB513B920E73FA10E06A78 /* ClipForge.app */,
+				9B9F461822B326DB91CA73A5 /* ClipForgeTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5EB2B96FC70AB2A3B6A5A2DC /* ClipForge */ = {
+			isa = PBXGroup;
+			children = (
+				254C504402A60DB8C60B29C8 /* App */,
+				160CA0FEDD81F2B4E14D662D /* Managers */,
+				0D181CE6474F25EA37AD1F98 /* Models */,
+				FC71A0616283D22B727AB9D2 /* Resources */,
+				F94ABC4C22144FE5CD5C9DB2 /* ViewModels */,
+				D855C725F8EE24C5C73C2BE2 /* Views */,
+			);
+			path = ClipForge;
+			sourceTree = "<group>";
+		};
+		87C1570393F5CC7347BAEB71 = {
+			isa = PBXGroup;
+			children = (
+				5EB2B96FC70AB2A3B6A5A2DC /* ClipForge */,
+				D70D2FEE24DE9716DDDC8AB3 /* ClipForgeTests */,
+				4EAFCB5B2EC7B41A641FD716 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D70D2FEE24DE9716DDDC8AB3 /* ClipForgeTests */ = {
+			isa = PBXGroup;
+			children = (
+				A034F668EFA57C7F6DFFE6E8 /* LibraryManagerTests.swift */,
+				A8658D7CF5343A234B83D744 /* ReplayBufferTests.swift */,
+			);
+			path = ClipForgeTests;
+			sourceTree = "<group>";
+		};
+		D855C725F8EE24C5C73C2BE2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0BDD2A990ACB418A45CDE69F /* ContentView.swift */,
+				4EAB6CF92955F46469F0E8D8 /* Library */,
+				E52D3E1E6C5F6789E2905103 /* MenuBar */,
+				E35131AAA32A5F84661850DC /* Onboarding */,
+				2D9F9A8E611522BD3729DCBB /* Settings */,
+				04F1844541F7D33514419A5C /* Shared */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E35131AAA32A5F84661850DC /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				8DAA2B9C7E2142D89263689F /* PermissionsOnboardingView.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		E52D3E1E6C5F6789E2905103 /* MenuBar */ = {
+			isa = PBXGroup;
+			children = (
+				B2264B83958871D46ED12AF8 /* MenuBarController.swift */,
+			);
+			path = MenuBar;
+			sourceTree = "<group>";
+		};
+		F94ABC4C22144FE5CD5C9DB2 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				A8010A2E14E9017D60B79A37 /* CaptureViewModel.swift */,
+				B0C821D4F00B02686A06D992 /* LibraryViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		FC71A0616283D22B727AB9D2 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				6BE7019B3877F02E340F0647 /* Assets.xcassets */,
+				91B594C35588C5C025B6EAB6 /* ClipForge.entitlements */,
+				8B73F86C76F97A1DD6347EF8 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CE259AF4787285FC75940C3D /* ClipForge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E5616059FB92821F003B7992 /* Build configuration list for PBXNativeTarget "ClipForge" */;
+			buildPhases = (
+				6CF6CB21CE812C4EA8F5CA89 /* Sources */,
+				58FAA99F5FC766FDD87AF9B7 /* Resources */,
+				C3D4E5F6A7B80001C3D4E5F6 /* Fix App Icon */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ClipForge;
+			packageProductDependencies = (
+			);
+			productName = ClipForge;
+			productReference = D1FB513B920E73FA10E06A78 /* ClipForge.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F95B5C31A656E68A56C97065 /* ClipForgeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2C171B33144E900DF7F243E4 /* Build configuration list for PBXNativeTarget "ClipForgeTests" */;
+			buildPhases = (
+				1CD01C9F4C77DBD8D5379B70 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				448CBC529675C441335B499E /* PBXTargetDependency */,
+			);
+			name = ClipForgeTests;
+			packageProductDependencies = (
+			);
+			productName = ClipForgeTests;
+			productReference = 9B9F461822B326DB91CA73A5 /* ClipForgeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1B9B09D348FC639337BA58C0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					CE259AF4787285FC75940C3D = {
+						DevelopmentTeam = MQRKA7LAND;
+						ProvisioningStyle = Manual;
+					};
+					F95B5C31A656E68A56C97065 = {
+						DevelopmentTeam = MQRKA7LAND;
+						ProvisioningStyle = Manual;
+					};
+				};
+			};
+			buildConfigurationList = C791CCB56A8EDAF87B45A984 /* Build configuration list for PBXProject "ClipForge" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 87C1570393F5CC7347BAEB71;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 4EAFCB5B2EC7B41A641FD716 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CE259AF4787285FC75940C3D /* ClipForge */,
+				F95B5C31A656E68A56C97065 /* ClipForgeTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		58FAA99F5FC766FDD87AF9B7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAF80EC52B868D6E021C5CEB /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C3D4E5F6A7B80001C3D4E5F6 /* Fix App Icon */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Fix App Icon";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "cp \"$SRCROOT/ClipForge/Resources/AppIcon.icns\" \"$BUILT_PRODUCTS_DIR/$PRODUCT_NAME.app/Contents/Resources/AppIcon.icns\"";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1CD01C9F4C77DBD8D5379B70 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				453C79E72CE1E90CC65C0611 /* LibraryManagerTests.swift in Sources */,
+				9D4601DBFACEEB1759F351CD /* ReplayBufferTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6CF6CB21CE812C4EA8F5CA89 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C400266A3EA23762051090DB /* AppDelegate.swift in Sources */,
+				2FEBE07359D9BDBA1A0889BD /* AudioManager.swift in Sources */,
+				4E1564F624C6E49AE108ACD4 /* CaptureManager.swift in Sources */,
+				25146BC6A48BB3A13F8910F4 /* CapturePreviewView.swift in Sources */,
+				66506F2ABEBBB12A14A26D27 /* CaptureSettingsView.swift in Sources */,
+				F651F5DE1E4B06653FC57617 /* CaptureSource.swift in Sources */,
+				15AC8B6D9D6F9B2F683DD350 /* CaptureViewModel.swift in Sources */,
+				18BD54B0F636D13C1BD89AA8 /* Clip.swift in Sources */,
+				9792AE1FBCCDE66E0D42485A /* ClipDetailView.swift in Sources */,
+				EFEB4AFB5ECAAD4170998599 /* ClipExportManager.swift in Sources */,
+				030D82D8BE74790AD73AD63D /* ClipForgeApp.swift in Sources */,
+				B9CFAE272652EF9EF4C1BB8A /* ClipSaveBanner.swift in Sources */,
+				E32E3F9DE5CC1A0868FC2290 /* ContentView.swift in Sources */,
+				39C6D1D906579AA3E148A138 /* EmptyStateView.swift in Sources */,
+				0C39FD78F77183025E1AA680 /* GeneralSettingsView.swift in Sources */,
+				9F5EDFDB7886A7F0A9D38AC0 /* HotkeyManager.swift in Sources */,
+				4331C844311459426359BD68 /* HotkeySettingsView.swift in Sources */,
+				87823D479DA1F1CEE053E061 /* LibraryManager.swift in Sources */,
+				8589AC4A4699C14ABD6D28B6 /* LibrarySettingsView.swift in Sources */,
+				795491F7CC8575D15D0466DC /* LibraryView.swift in Sources */,
+				B37324C5264D0B3D1D0343E8 /* LibraryViewModel.swift in Sources */,
+				B58FFBBCC087F004D5DB6FE8 /* MenuBarController.swift in Sources */,
+				AF0B5BC1DAA0A4B481888C7B /* PendingClip.swift in Sources */,
+				CCFCC909A7A12DC5FEFC54DF /* PermissionsManager.swift in Sources */,
+				DAFBA73B81F214F80F7918F0 /* PermissionsOnboardingView.swift in Sources */,
+				F88D627DC2CE612B6A146066 /* RecordingSettings.swift in Sources */,
+				A1B2C3D4E5F60002A1B2C3D4 /* SessionWriter.swift in Sources */,
+				284AF551ED150F5EDC097B60 /* ReplayBuffer.swift in Sources */,
+				6A52A543B1BAE5FBB52032E3 /* SettingsStore.swift in Sources */,
+				737AED39F8F6E23E72FE03BE /* SettingsView.swift in Sources */,
+				D7B26A7F6355AC7E017F8545 /* SystemAudioCapture.swift in Sources */,
+				06F908F6CB6F77EF7579B38F /* ThumbnailView.swift in Sources */,
+				A2FA16DC1B8AF48BD580F755 /* TrimView.swift in Sources */,
+				1AAA9967A72B8A21723F842E /* VideoEncoder.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		448CBC529675C441335B499E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CE259AF4787285FC75940C3D /* ClipForge */;
+			targetProxy = 09D0F9072939228ACC69D707 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		25E5AD47D7D90E81BFD5A981 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ClipForge/Resources/ClipForge.entitlements;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = ClipForge/Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.clipforge.app;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		6DE8ED6244305EDC69CDD47C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.clipforge.tests;
+				SDKROOT = macosx;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ClipForge.app/Contents/MacOS/ClipForge";
+			};
+			name = Release;
+		};
+		7748EF06E2DF78AFAE8E797F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Manual;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = MQRKA7LAND;
+				ENABLE_HARDENED_RUNTIME = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.9;
+			};
+			name = Debug;
+		};
+		8B1C8CDFA63F72B12066633E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.clipforge.tests;
+				SDKROOT = macosx;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ClipForge.app/Contents/MacOS/ClipForge";
+			};
+			name = Debug;
+		};
+		A68FC4D0EF3D4DF75526BFA3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ClipForge/Resources/ClipForge.entitlements;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = ClipForge/Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.clipforge.app;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		B12B83831875149953E60233 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Manual;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = MQRKA7LAND;
+				ENABLE_HARDENED_RUNTIME = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.9;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2C171B33144E900DF7F243E4 /* Build configuration list for PBXNativeTarget "ClipForgeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8B1C8CDFA63F72B12066633E /* Debug */,
+				6DE8ED6244305EDC69CDD47C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		C791CCB56A8EDAF87B45A984 /* Build configuration list for PBXProject "ClipForge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7748EF06E2DF78AFAE8E797F /* Debug */,
+				B12B83831875149953E60233 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		E5616059FB92821F003B7992 /* Build configuration list for PBXNativeTarget "ClipForge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A68FC4D0EF3D4DF75526BFA3 /* Debug */,
+				25E5AD47D7D90E81BFD5A981 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1B9B09D348FC639337BA58C0 /* Project object */;
+}
