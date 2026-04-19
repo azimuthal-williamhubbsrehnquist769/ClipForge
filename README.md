@@ -1,5 +1,10 @@
 # ClipForge
 
+[![GitHub Downloads](https://img.shields.io/github/downloads/prsalikut/ClipForge/total?style=flat-square&label=Downloads&color=brightgreen)](https://github.com/prsalikut/ClipForge/releases)
+[![GitHub Stars](https://img.shields.io/github/stars/prsalikut/ClipForge?style=flat-square&color=yellow)](https://github.com/prsalikut/ClipForge/stargazers)
+[![macOS](https://img.shields.io/badge/macOS-14%2B-blue?style=flat-square)](https://github.com/prsalikut/ClipForge/releases/latest)
+[![License](https://img.shields.io/github/license/prsalikut/ClipForge?style=flat-square)](LICENSE)
+
 **ClipForge** is a lightweight, open-source macOS gameplay clipping app.
 Save the last N seconds of your gameplay with a single hotkey - no account, no cloud, no bloat.
 
